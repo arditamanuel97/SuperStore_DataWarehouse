@@ -10,6 +10,7 @@ It follows the star schema with **fact:** sales and **dimensions:** orders, cust
 - **COLUMNS:**
 
 | Column Name     | Data Type     | Description                                                                                       |
+|-----------------|---------------|---------------------------------------------------------------------------------------------------|
 | order_key       | INT           | Primary Key                                                                                       |
 | order_id        | NVARCHAR(100) | Unique identifier for each order                                                                  |
 | customer_id     | NVARCHAR(100) | Unique identifier for the customer who made the order                                             |
@@ -59,4 +60,5 @@ It follows the star schema with **fact:** sales and **dimensions:** orders, cust
 | quantity    | INT           | The number of items sold                        |
 | discount    | DECIMAL(18,2) | The percentage taken out of the revenue         |
 | cost        | DECIMAL(18,2) | The amount of costs needed to conduct the sale  |
+
 | profit      | DECIMAL(18,2) | The difference of revenue - cost                |
