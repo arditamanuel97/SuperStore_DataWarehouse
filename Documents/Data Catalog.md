@@ -45,9 +45,9 @@ It follows the star schema with **fact:** sales and **dimensions:** orders, cust
 | product_id   | NVARCHAR(100) | Unique identifier for each product                                                                     |
 | product_name | NVARCHAR(MAX) | A product's name                                                                                       |
 | category     | NVARCHAR(100) | A product belongs to one of the categories: Office Supplies, Furniture, Technology                     |
-| subcategory  | NVARCHAR(100) | A product belongs to one of the subcategories: Supplies, Storage, Phones, Fasteners, Copiers, <br>     |
-|                                Chairs, Bookcases, Machines, Art, Envelopes, Binders, Labels, Furnishings, Accessories,<br>            |
-|                                Appliances, Paper, Tables                                                                              |
+| subcategory  | NVARCHAR(100) | A product belongs to one of the subcategories: Supplies, Storage, Phones, Fasteners, Copiers, <br>     
+                                 Chairs, Bookcases, Machines, Art, Envelopes, Binders, Labels, Furnishings, Accessories,<br>            
+                                 Appliances, Paper, Tables                                                                              |
 | create_date  | DATE          | Date when the product information was inputted                                                         |
 
 ### 4. **gold.fact_sales**
@@ -64,6 +64,7 @@ It follows the star schema with **fact:** sales and **dimensions:** orders, cust
 | discount    | DECIMAL(18,2) | The percentage taken out of the revenue         |
 | cost        | DECIMAL(18,2) | The amount of costs needed to conduct the sale  |
 | profit      | DECIMAL(18,2) | The difference of revenue - cost                |
+
 
 
 
