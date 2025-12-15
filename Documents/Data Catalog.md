@@ -23,6 +23,7 @@ It follows the star schema with **fact:** sales and **dimensions:** orders, cust
 - **COLUMNS:**
 
 | Column Name     | Data Type     | Description                                                                     |
+|-----------------|---------------|---------------------------------------------------------------------------------|
 | customer_key    | NVARCHAR(100) | Primary Key                                                                     |
 | first_name      | NVARCHAR(250) | A customer's first name                                                         |
 | last_name       | NVARCHAR(250) | A customer's last name                                                          |    
@@ -39,6 +40,7 @@ It follows the star schema with **fact:** sales and **dimensions:** orders, cust
 - **COLUMNS:**
 
 | Column Name  | Data Type     | Description                                                                                            |
+|--------------|---------------|--------------------------------------------------------------------------------------------------------|
 | product_key  | INT           | Primary Key                                                                                            |
 | product_id   | NVARCHAR(100) | Unique identifier for each product                                                                     |
 | product_name | NVARCHAR(MAX) | A product's name                                                                                       |
@@ -53,6 +55,7 @@ It follows the star schema with **fact:** sales and **dimensions:** orders, cust
 - **COLUMNS:**
 
 | Column Name | Data Type     | Description                                     |
+|-------------|---------------|-------------------------------------------------|
 | order_key   | INT           | Foreign Key of Orders                           |
 | product_key | INT           | Foreign Key of Products                         |
 | revenue     | DECIMAL(18,2) | The total amount of money that the sale sold    |
@@ -62,3 +65,4 @@ It follows the star schema with **fact:** sales and **dimensions:** orders, cust
 | cost        | DECIMAL(18,2) | The amount of costs needed to conduct the sale  |
 
 | profit      | DECIMAL(18,2) | The difference of revenue - cost                |
+
